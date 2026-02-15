@@ -4,7 +4,7 @@
   "description": "This is a template repository for the first assignment in BVD 103 at McMaster Continuing Education.",
   "main": "src/server.ts",
   "scripts": {
-    "start-server": "tsx ./src/server.ts",
+    "start-server": "ts-node --transpile-only ./src/server.ts",
     "test": "vitest",
     "test:ci": "vitest run",
     "lint": "eslint . --ext .ts",
@@ -16,9 +16,10 @@
   "license": "ISC",
   "dependencies": {
     "@koa/cors": "^5.0.0",
+    "@koa/router": "^15.3.0",
     "koa": "^2.15.2",
     "koa-qs": "^3.0.0",
-    "koa-zod-router": "^2.2.0",
+    "koa-zod-router": "^2.3.0",
     "mongodb": "^7.0.0",
     "tsx": "^4.21.0",
     "zod": "^3.22.4"
